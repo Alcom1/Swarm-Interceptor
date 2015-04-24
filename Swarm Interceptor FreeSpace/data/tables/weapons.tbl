@@ -1,0 +1,112 @@
+#Primary Weapons
+
+;-----------------------------------------------------------------------------------------------------
+; Sunder 0.5
+;-----------------------------------------------------------------------------------------------------
+$Name:					Sunder 0.5
+	+Title:				Sunder 0.5
+	+Description:
+XSTR( "Plasma based Brick Seperator", 3244)
+$end_multi_text
+	+Tech Title:			XSTR( "Sunder 0.5", 146 )
+	+Tech Anim:			Tech_Subach_HL-7
+	+Tech Description:
+XSTR(
+"Descriptive text...", -1)
+$end_multi_text
+$Tech Model:				SunderP5.pof
+$Model File:				none
+	@Laser Bitmap:			triangle
+	@Laser Glow:			2_laserglow03
+	@Laser Color:			200, 155, 0
+	@Laser Color2:			200, 50, 0
+	@Laser Length:			12.0
+	@Laser Head Radius:		1.10
+	@Laser Tail Radius:		1.10
+$Mass:					0.2
+$Velocity:				600.0
+$Fire Wait:				0.3
+$Damage:				22
+$Armor Factor:				1.0
+$Shield Factor:				0.5
+$Subsystem Factor:			0.2
+$Lifetime:				2.0
+$Energy Consumed:			0.20
+$Cargo Size:				0.0
+$Homing:				NO
+$LaunchSnd:				201
+$ImpactSnd:				85
+$Flags:					( "in tech database" "player allowed" )
+$Icon:					WepSunfire
+$Anim:					SD4
+$Impact Explosion:			none
+
+#End
+
+#Secondary Weapons
+
+;-----------------------------------------------------------------------------------------------------
+; Apogee
+;----------------------------------------------------------------------------------------------------
+$Name:					Apogee
+	+Title:				XSTR( "Apogee", -1 )
+	+Description:
+XSTR(
+"Standard Issue
+Fast Target Lock", -1)
+$end_multi_text
+	+Tech Title:			XSTR( "Apogee", -1 )
+	+Tech Anim:			Tech_EMP
+	+Tech Description:
+XSTR(
+"The GTM-19 Harpoon is the most sophisticated weapon in the GTVA arsenal. Not only is it the fastest aspect-seeking missile used by the fleet, but advanced fuzzy-logic circuitry enables it to gain lock faster than any other missile in its class. The missile's warhead is wrapped in a shell of ultra-dense depleted uranium, ensuring maximum penetration into the hull of its target before the warhead detonates.", -1)
+$end_multi_text
+$Tech Model:				Missile Basic High.pof
+$Model File:				Missile Basic.pof
+$Mass:					15.0
+$Velocity:				250.0
+$Fire Wait:				2.0
+$Damage:				80
+$Blast Force:				60.0
+$Inner Radius:				20.0
+$Outer Radius:				40.0
+$Shockwave Speed:			0
+$Armor Factor:				1.0
+$Shield Factor:				0.6
+$Subsystem Factor:			0.5
+$Lifetime:				5.0
+$Energy Consumed:			0.0
+$Cargo Size:				2.5
+$Homing:				YES
+	+Type:				ASPECT
+	+Turn Time:			1.0
+	+Min Lock Time:			2.0
+	+Lock Pixels/Sec:		70
+	+Catch-up Pixels/Sec:		100
+	+Catch-up Penalty:		30
+$LaunchSnd:				91
+$ImpactSnd:				88
+$FlyBySnd:				-1
+$Rearm Rate:				2.0
+$Flags:					( "in tech database" "player allowed" "no homing speed ramp" "cycle")
+$Icon:					iconCrossbow
+$Anim:					cross
+$Impact Explosion:			ExpMissileHit1
+$Impact Explosion Radius:		7.0
+
+#End
+
+#Countermeasures
+$Name:                                  Type One
+$Velocity:                              30.0
+$Fire Wait:                             0.5
+$Lifetime Min:                  	1.0
+$Lifetime Max:                  	2.0
+$LaunchSnd:                             99
+$Model:                                 cmeasure01.pof
+
+#End
+
+$Player Weapon Precedence: (
+     "Sunder 0.5"
+     "Apogee"   )

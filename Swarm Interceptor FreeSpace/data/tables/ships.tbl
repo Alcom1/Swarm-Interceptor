@@ -1,0 +1,188 @@
+#Default Player Ship
+
+$Name:					Swarm Interceptor
+
+#End
+
+
+#Engine Wash Info
+
+$Name: Default
+$Angle: 10.0
+$Radius Mult: 1.2
+$Length: 400
+$Intensity:	1.0
+
+$Name: Default100
+$Angle: 12.0
+$Radius Mult: 1.2
+$Length: 100
+$Intensity:	1.0
+
+$Name: Default150
+$Angle: 10.0
+$Radius Mult: 1.2
+$Length: 150
+$Intensity:	1.0
+
+$Name: Default200
+$Angle: 10.0
+$Radius Mult: 1.2
+$Length: 200
+$Intensity:	1.0
+
+$Name: Default300
+$Angle: 8.0
+$Radius Mult: 1.2
+$Length: 300
+$Intensity:	1.0
+
+$Name: Default500
+$Angle: 7.0
+$Radius Mult: 1.2
+$Length: 500
+$Intensity:	1.0
+
+$Name: Default700
+$Angle: 7.0
+$Radius Mult: 1.2
+$Length: 700
+$Intensity:	1.0
+
+$Name: Default800
+$Angle: 6.0
+$Radius Mult: 1.2
+$Length: 800
+$Intensity:	1.0
+
+$Name: Default900
+$Angle: 6.0
+$Radius Mult: 1.2
+$Length: 900
+$Intensity:	1.0
+
+$Name: Default1000
+$Angle: 5.0
+$Radius Mult: 1.2
+$Length: 1000
+$Intensity:	1.0
+
+$Name: Default1100
+$Angle: 5.0
+$Radius Mult: 1.2
+$Length: 1100
+$Intensity:	1.0
+
+$Name: Default1500
+$Angle: 5.0
+$Radius Mult: 1.2
+$Length: 1500
+$Intensity:	1.0
+
+#End
+
+
+#Ship Classes
+
+;-----------------------------------------------------------------------------------------------------
+; LEGO
+;-----------------------------------------------------------------------------------------------------
+;------------------------
+; Swarm Interceptor
+;------------------------
+$Name:					Swarm Interceptor
+$Short name:				Swarm Interceptor
+$Species:				LEGO
+	+Type:				XSTR("Interceptor (duh!)", -1)
+	+Maneuverability:			XSTR("Good", -1)
+	+Armor:				XSTR("Moderate", -1)
+	+Manufacturer:			XSTR("Galaxy Squad", -1)
+	+Description:			XSTR(" ", -1)
+	$end_multi_text
+	+Tech Description:		XSTR("LEGO Swarm Interceptor. Set # 70701.", -1)
+	$end_multi_text
+	+Length:			37 m
+	+Gun Mounts:			2
+	+Missile Banks:			1
+$POF File:				Swarm Interceptor.pof
+$Detail Distance:			( 0 )
+$Show Damage:				YES
+$Density:				1
+$Damp:					0.3
+$Rotdamp:				0.27
+$Max Velocity:				0.0, 0.0, 85.0
+$Rotation Time:				3.5, 3.5, 3.5
+$Rear Velocity:				0.0
+$Forward Accel:				1.0
+$Forward Decel:				0.5
+$Slide Accel:				0.0
+$Slide Decel:				0.0
+$Expl Inner Rad:			40.0
+$Expl Outer Rad:			60.0
+$Expl Damage:				20.0
+$Expl Blast:				500.0
+$Expl Propagates:			NO
+$Expl Visual Rad:			25.0
+$Shockwave Speed:			0.0
+$Allowed PBanks:			( "Sunder 0.5" )
+$Allowed Dogfight PBanks:		( )
+$Default PBanks:			( "Sunder 0.5" "Sunder 0.5" )
+$PBank Capacity:			( 0, 0 )
+$Allowed SBanks:			( "Apogee" )
+$Allowed Dogfight SBanks:		( )
+$Default SBanks:			( "Apogee" )
+$SBank Capacity:			( 20 )
+$Shields:				200
+$Shield Color:				100 100 255
+$Power Output:				4.0
+$Max Oclk Speed:			85.0
+$Max Weapon Eng:			150.0
+$Hitpoints:				200
+$Flags:					( "player_ship" "default_player_ship" "fighter" "in tech database" "gun convergence" "generate icon" )
+$AI Class:				Captain
+$Afterburner:				YES
+	+Aburn Max Vel:			0.0, 0.0, 165.0
+	+Aburn For accel:		0.7
+	+Aburn Fuel:			360.0
+	+Aburn Burn Rate:		40.0
+	+Aburn Rec Rate:		25.0
+$Countermeasures:			25
+$Scan Time:				2000
+$EngineSnd:				128
+$Closeup_Pos:				0.0, 0.0, -20
+$Closeup_Zoom:				0.625
+$Shield_Icon:				shield-f01
+$Ship_Icon:				iconfighter01
+$Ship_Anim:				ssfighter01
+$Ship_Overhead:				loadfighter01
+$Score:					8
+$Subsystem:				communication,	15, 0
+$Subsystem:				navigation,	15, 0
+$Subsystem:				weapons,	20, 0
+$Subsystem:				sensors,	15, 0
+$Subsystem:				engines,	40, 0
+$Subsystem:				WingL,		50, 0
+$Flags:					( "untargetable" "damage as hull" )
+$animation:				triggered
+$type:					afterburner
+	+sub_type:			0
+	+delay:				0
+	+relative_angle:		0,-90,0
+	+velocity:			0,90,0
+	+acceleration:			0,100,0
+	+time:				1000
+$Subsystem:				WingR,		50, 0
+$Flags:					( "untargetable" "damage as hull" )
+$animation:				triggered
+$type:					afterburner
+	+sub_type:			0
+	+delay:				0
+	+relative_angle:		0,90,0
+	+velocity:			0,90,0
+	+acceleration:			0,100,0
+	+time:				1000
+
+#End
+
+$Player Ship Precedence: (
+      "Swarm Interceptor")

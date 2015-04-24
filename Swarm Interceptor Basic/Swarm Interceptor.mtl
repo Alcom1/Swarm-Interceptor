@@ -1,0 +1,33 @@
+# Blender MTL File: 'Windshield.blend'
+# Material Count: 3
+
+newmtl Detail0-trans_au.001
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Glass.png
+map_d Glass.png
+
+newmtl cube933_auv
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Interceptor.png
+map_d Interceptor.png
+
+newmtl default
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.504470 0.519530 0.441726
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2

@@ -1,0 +1,20 @@
+#SPECIES DEFS
+
+;------------------------
+; LEGO
+;------------------------
+$Species_Name: LEGO
+$Default IFF: Friendly
+$FRED Color: ( 0, 133, 43 )
+$MiscAnims:
+	+Debris_Texture: PlasticGrey
+	+Shield_Hit_ani: shieldhit01a
+$ThrustAnims:
+	+Normal: thruster01
+	+Afterburn: thruster01a
+$ThrustGlows:
+	+Normal: thrusterglow01
+	+Afterburn: thrusterglow01a
+$AwacsMultiplier: 1.00
+
+#END

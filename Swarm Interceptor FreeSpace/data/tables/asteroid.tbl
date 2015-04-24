@@ -1,0 +1,77 @@
+;  file to indicate all asteroid types and their physical characteristics
+
+#Asteroid Types
+
+$Name:				Small Asteroid
+$POF file1:			ast03.pof
+$POF file2:			asta03.pof
+$POF file3:			astb03.pof
+$Detail distance:		(0, 30, 80, 150)
+$Max Speed:			60.0
+$Expl inner rad:		0.0
+$Expl outer rad:		0.0
+$Expl damage:			0.0
+$Expl blast:			0.0
+$Hitpoints:			100
+
+$Name:				Medium Asteroid
+$POF file1:			ast02.pof
+$POF file2:			asta02.pof
+$POF file3:			astb02.pof
+$Detail distance:		(0, 120, 240, 400)
+$Max Speed:			60.0
+$Expl inner rad:		25.0
+$Expl outer rad: 		75.0
+$Expl damage:			20.0
+$Expl blast:      		1000.0
+$Hitpoints:			200
+
+$Name:				Large Asteroid
+$POF file1:			ast01.pof
+$POF file2:			asta01.pof
+$POF file3:			astb01.pof
+$Detail distance:		(0, 185, 350, 600)
+$Max Speed:			60.0
+$Expl inner rad:		100.0
+$Expl outer rad:		200.0
+$Expl damage:			50.0
+$Expl blast:			3000.0
+$Hitpoints:			300
+
+$Name:				LEGO Debris 1
+$POF file1:			Tdebris01.pof
+$POF file2:			none
+$Detail distance:		(0, 300, 600, 800)
+$Max Speed:			60.0
+$Expl inner rad:		100.0
+$Expl outer rad:		200.0
+$Expl damage:			50.0
+$Expl blast:			3000.0
+$Hitpoints:			147
+
+$Name:				LEGO Debris 2
+$POF file1:			Tdebris02.pof
+$POF file2:			none
+$Detail distance:		(0, 300, 600, 800)
+$Max Speed:			60.0
+$Expl inner rad:		100.0
+$Expl outer rad:		200.0
+$Expl damage:			50.0
+$Expl blast:			3000.0
+$Hitpoints:			147
+
+$Name:				LEGO Debris 3
+$POF file1:			Tdebris03.pof
+$POF file2:			none
+$Detail distance:		(0, 300, 600, 800)
+$Max Speed:			60.0
+$Expl inner rad:		100.0
+$Expl outer rad:		200.0
+$Expl damage:			50.0
+$Expl blast:			3000.0
+$Hitpoints:			147
+
+#End
+
+$Impact Explosion:		ExpMissilehit1
+$Impact Explosion Radius:	20.0

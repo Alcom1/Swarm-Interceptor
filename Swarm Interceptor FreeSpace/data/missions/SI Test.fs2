@@ -1,0 +1,216 @@
+#Mission Info
+
+$Version: 0.10
+$Name:  XSTR("SI Test", -1)
+$Author: Alex Bronner
+$Created: 06/10/14 at 02:51:30
+$Modified: 08/30/14 at 01:09:18
+$Notes:
+This is a FRED2_OPEN created mission.
+$End Notes:
+
+$Mission Desc:
+ XSTR("Put mission description here
+", -1)
+$end_multi_text
++Game Type Flags: 1
++Flags: 262152
++Fog Near Mult: 1.000000
+
++Fog Far Mult: 1.000000
+
++Disallow Support: 1
++Hull Repair Ceiling: 0.000000
++Subsystem Repair Ceiling: 100.000000
+
++Viewer pos: -43.234238, 61.007664, -92.062790
++Viewer orient:
+	0.900273, 0.000000, -0.435327,
+	0.228518, 0.851142, 0.472585,
+	0.370525, -0.524935, 0.766260
+
+
+$Skybox Model: starfield.pof
+
+$AI Profile: LEGO
+
+#Command Briefing
+
+#Briefing
+$start_briefing
+$num_stages: 0
+$end_briefing
+
+#Debriefing_info
+
+$Num stages: 0
+
+#Players		;! 1 total
+
+$Starting Shipname: Alpha 1
+$Ship Choices: (
+	"Swarm Interceptor"	5
+)
+
++Weaponry Pool: (
+	"Sunder 0.5"	18
+	"Apogee"	508
+)
+
+#Objects		;! 3 total
+
+$Name: Alpha 1		;! Object #0
+$Class: Swarm Interceptor
+$Team: Friendly
+$Location: 0.000000, 0.000000, 0.000000
+$Orientation:
+	-0.883081, 0.000000, -0.469220,
+	0.000000, 1.000000, 0.000000,
+	0.469220, 0.000000, -0.883081
+$AI Behavior: None
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Velocity: 33
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" "player-start" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Spyrius 1		;! Object #1
+$Class: Swarm Interceptor
+$Team: Hostile
+$Location: 32.761398, -0.000052, 4.752446
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Major
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+$Name: Spyrius 2		;! Object #2
+$Class: Swarm Interceptor
+$Team: Hostile
+$Location: 45.006123, 6.533649, 0.158492
+$Orientation:
+	1.000000, 0.000000, 0.000000,
+	0.000000, 1.000000, 0.000000,
+	0.000000, 0.000000, 1.000000
+$AI Behavior: None
++AI Class: Major
+$Cargo 1:  XSTR("Nothing", -1)
++Initial Hull: 100
++Subsystem: Pilot
+$Arrival Location: Hyperspace
+$Arrival Cue: ( false ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Determination: 10
++Flags: ( "cargo-known" )
++Flags2: ( )
++Respawn priority: 0
++Group: 0
++Use Table Score:
++Score: 8
+
+#Wings		;! 2 total
+
+$Name: Alpha
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Alpha 1
+
+$Arrival Location: Hyperspace
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 1 total
+	"Alpha 1"
+)
++Hotkey: 0
++Flags: ( )
+
+$Name: Spyrius
+$Waves: 1
+$Wave Threshold: 0
+$Special Ship: 0		;! Spyrius 1
+
+$Arrival Location: Near Ship
++Arrival Distance: 2500
+$Arrival Anchor: Alpha 1
++Arrival delay: 12
+$Arrival Cue: ( true ) 
+$Departure Location: Hyperspace
+$Departure Cue: ( false ) 
+$Ships: (		;! 2 total
+	"Spyrius 1"
+	"Spyrius 2"
+)
++Flags: ( )
+
+#Events		;! 0 total
+
+
+#Goals		;! 0 total
+
+
+#Waypoints		;! 0 lists total
+
+
+#Messages		;! 0 total
+
+
+#Reinforcements		;! 0 total
+
+
+#Background bitmaps		;! 0 total
+
+$Num stars: 500
+$Ambient light level: 7895160
+
+$Bitmap List:
+$Sun: SunWhite
++Angles: 0.000000 0.000000 0.000000
++Scale: 1.000000
+$Sun: SunWhite
++Angles: 1.553343 0.767945 0.000000
++Scale: 1.000000
+
+#Asteroid Fields
+
+$Density: 10
++Field Type: 1
++Debris Genre: 0
++Field Debris Type: 0
+$Average Speed: 0.000000
+$Minimum: -1000.000000, -1000.000000, -1000.000000
+$Maximum: 1000.000000, 1000.000000, 1000.000000
+
+#Music
+
+$Event Music: 3: Leviticus
+$Briefing Music: None
+
+#End
+
